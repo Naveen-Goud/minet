@@ -1,0 +1,15 @@
+@media (min-width:1080px){
+    .step{
+        margin-left: 0.5vw;
+    }
+}
+@media(min-width:1440px){
+    .step{
+        margin-left: 0.17vw;
+    }
+}
+@media(min-width:1920px){
+    .step{
+        margin-left: -0.40vw;
+    }
+}
