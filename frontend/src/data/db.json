@@ -1,0 +1,234 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "shaik ",
+      "email": "shaik@gmail.com",
+      "password": "Sk879qwe!"
+    }
+  ],
+  "watchlists": [
+    {
+      "id": 1,
+      "userId": 1,
+      "coinId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "coinId": 2
+    }
+  ],
+  "coins": [
+    {
+      "id": 1,
+      "acronym": "BTC",
+      "name": "Bitcoin",
+      "iconUrl": "../assets/icons/bitcoin.svg",
+      "currentPrice": 34065.02,
+      "marketCap": 590000675120.24,
+      "circulatingSupply": 19662000.4,
+      "volume": 2123990600.9
+    },
+    {
+      "id": 2,
+      "acronym": "ETH",
+      "name": "Etherium",
+      "iconUrl": "../assets/icons/etherium.svg",
+      "currentPrice": 28065.98,
+      "marketCap": 224434676000.17,
+      "circulatingSupply": 12123898.2,
+      "volume": 2000199760.1
+    },
+    {
+      "id": 3,
+      "acronym": "USDT",
+      "name": "Tether",
+      "iconUrl": "../assets/icons/tether.svg",
+      "currentPrice": 72.02,
+      "marketCap": 4222008909.6,
+      "circulatingSupply": 5220890.1,
+      "volume": 70000400.7
+    },
+    {
+      "id": 4,
+      "acronym": "BNB",
+      "name": "Bitcoin coin",
+      "iconUrl": "../assets/icons/bitcoincoin.svg",
+      "currentPrice": 24065.45,
+      "marketCap": 120908567800.56,
+      "circulatingSupply": 8909900.4,
+      "volume": 108289080.9
+    },
+    {
+      "id": 5,
+      "acronym": "ADA",
+      "name": "Cardano",
+      "iconUrl": "../assets/icons/cardano.svg",
+      "currentPrice": 104.02,
+      "marketCap": 80001237890.24,
+      "circulatingSupply": 7289302.4,
+      "volume": 290892236.92
+    }
+  ],
+  "price": [
+    {
+      "id": 1,
+      "coinId": 1,
+      "priceHistory": [
+        {
+          "date": "2023-07-09",
+          "price": 33065.98
+        },
+        {
+          "date": "2023-07-08",
+          "price": 28769.08
+        },
+        {
+          "date": "2023-07-07",
+          "price": 31721.11
+        },
+        {
+          "date": "2023-07-06",
+          "price": 36967.98
+        },
+        {
+          "date": "2023-07-05",
+          "price": 34065.66
+        },
+        {
+          "date": "2023-07-04",
+          "price": 30065.01
+        },
+        {
+          "date": "2023-07-03",
+          "price": 33000.98
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "coinId": 2,
+      "priceHistory": [
+        {
+          "date": "2023-07-09",
+          "price": 28065.98
+        },
+        {
+          "date": "2023-07-08",
+          "price": 28765.08
+        },
+        {
+          "date": "2023-07-07",
+          "price": 27725.11
+        },
+        {
+          "date": "2023-07-06",
+          "price": 24961.98
+        },
+        {
+          "date": "2023-07-05",
+          "price": 25065.66
+        },
+        {
+          "date": "2023-07-04",
+          "price": 22065.01
+        },
+        {
+          "date": "2023-07-03",
+          "price": 27000.98
+        }
+      ]
+    }
+  ],
+  "wallet": [
+    {
+      "id": 1,
+      "userId": 1,
+      "currencyId": 1,
+      "currencyName": "US Dollar",
+      "acronym": "USD Coin",
+      "symbol": "$",
+      "balance": 34000
+    }
+  ],
+  "investments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "currency": "$",
+      "investmentHistory": [
+          {
+              "date": "2023-07-09",
+              "investedAmount": 15000
+          },
+          {
+              "date": "2023-07-08",
+              "investedAmount": 15000
+          },
+          {
+              "date": "2023-07-07",
+              "investedAmount": 7000
+          },
+          {
+              "date": "2023-07-06",
+              "investedAmount": 7000
+          },
+          {
+              "date": "2023-07-05",
+              "investedAmount": 0
+          },
+          {
+              "date": "2023-07-04",
+              "investedAmount": 0
+          },
+          {
+              "date": "2023-07-03",
+              "investedAmount": 0
+          }
+        ]
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "userId": 1,
+      "coinId": 1,
+      "balance": 0.23451,
+      "iconUrl": "../assets/icons/bitcoin.svg"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "coinId": 2,
+      "balance": 0.53891,
+      "iconUrl": "../assets/icons/etherium.svg"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "action": "purchase",
+      "coinId": 1,
+      "coinValue": 0.5,
+      "amount": 17032.52,
+      "time": "10-07-2023, 05:15 pm",
+      "status": "pending",
+      "fromUser": "Jane Smith",
+      "toUser": "John Smith"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "action": "sell",
+      "coinId": 1,
+      "coinValue": 0.5,
+      "amount": 17032.52,
+      "time": "11-07-2023, 09:15 pm",
+      "status": "success",
+      "fromUser": "Jane Smith",
+      "toUser": "John Smith"
+    }
+  ]
+}

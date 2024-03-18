@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: database-deploy
+   labels:
+      type: DB
+spec:
+  template:
+    metadata:
+      name: DB-pod
+      labels:
+        type: DB
+    spec:
+      containers:
+      - name: database-image
+        image: ghcr.io/anasuya-zemo/database-bc98:latest
+        ports:
+        - containerPort: 3306
+        envFrom:
+          - secretRef: 
+              name: database-secret
+        volumeMounts:
+          - mountPath: /var/lib/mysql
+            name: mysql-volume
+      imagePullSecrets: 
+      - name: ghcr-secret
+      volumes:
+         - name: mysql-volume
+           persistentVolumeClaim:
+             claimName: pvc-bc98
+
+  replicas: 1
+  selector:
+    matchLabels:
+      type: DB

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: frontend-deploy
+   labels:
+      type: FED
+spec:
+  template:
+    metadata:
+      name: FE-pod
+      labels:
+        type: FE
+    spec:
+      containers:
+      - name: frontend-image
+        image: ghcr.io/anasuya-zemo/frontend-bc98:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets: 
+      - name: ghcr-secret
+
+  replicas: 1
+  selector:
+    matchLabels:
+      type: FE

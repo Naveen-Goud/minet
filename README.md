@@ -1,1 +1,1 @@
-# minet
+# bootcamp-98-minet
